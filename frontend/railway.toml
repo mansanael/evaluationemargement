@@ -1,6 +1,6 @@
 [build]
 builder = "nixpacks"
-buildCommand = "rm -rf node_modules frontend/node_modules backend/node_modules package-lock.json && NODE_ENV=development npm install && npm run build --workspace=frontend"
+buildCommand = "rm -f package-lock.json && NODE_ENV=development npm install && npm run build --workspace=frontend"
 
 [deploy]
 startCommand = "npm run start --workspace=frontend"
