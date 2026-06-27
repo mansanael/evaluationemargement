@@ -1,0 +1,41 @@
+# ── Dépendances (tous les workspaces) ───────────────────
+node_modules/
+
+# ── Environnement ────────────────────────────────────────
+# .env.example est inclus volontairement
+.env
+.env.local
+.env.*.local
+
+# ── macOS ────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Logs ─────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── TypeScript ───────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Clés & certificats ───────────────────────────────────
+*.pem
+*.key
+
+# ── Tests ────────────────────────────────────────────────
+coverage/
+
+# ── Yarn Berry ───────────────────────────────────────────
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions

@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(mkdir -p frontend)",
+      "Bash(mv app *)",
+      "Bash(mv node_modules frontend/)",
+      "Bash(npx @nestjs/cli@latest new backend --package-manager npm --skip-git --language typescript)",
+      "Bash(npm install *)",
+      "Bash(npx prisma *)",
+      "Bash(mkdir -p \"/Users/mansanael/Documents/GitHub/evaluationemargement/frontend/app/admin/seminars/new\" \"/Users/mansanael/Documents/GitHub/evaluationemargement/frontend/app/admin/seminars/[id]\")",
+      "Bash(npm run *)",
+      "Bash(npx ts-node *)",
+      "Bash(curl -s http://localhost:3001/api/seminars)",
+      "Bash(node dist/src/main)",
+      "Bash(curl -s -X POST http://localhost:3001/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"admin@smi.com\",\"password\":\"admin123\"}')",
+      "Bash(python3 -m json.tool)"
+    ],
+    "additionalDirectories": [
+      "/Users/mansanael/Documents/GitHub/evaluationemargement/frontend/app/admin/seminars"
+    ]
+  }
+}

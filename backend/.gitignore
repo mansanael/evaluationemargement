@@ -1,0 +1,19 @@
+# ── Build NestJS ─────────────────────────────────────────
+dist/
+
+# ── Base de données SQLite ───────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Fichiers uploadés (volume local) ────────────────────
+uploads/
+
+# ── Environnement ────────────────────────────────────────
+.env
+
+# ── Client Prisma généré ─────────────────────────────────
+/generated/prisma
+
+# ── Tests ────────────────────────────────────────────────
+coverage/

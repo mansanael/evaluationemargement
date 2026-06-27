@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@source inline("
+  flex flex-1 flex-col flex-wrap inline-flex inline block hidden
+  items-center items-start justify-center justify-between
+  gap-1 gap-2 gap-3 gap-4 gap-5 gap-6 gap-8
+  space-y-1 space-y-2 space-y-3 space-y-4 space-y-5 space-y-6
+  grid grid-cols-2 grid-cols-3 md:grid-cols-2 md:grid-cols-3 md:grid-cols-4 lg:grid-cols-3
+
+  min-h-screen min-h-full h-full h-3 h-4 h-5 h-8 h-10 h-12 h-16 h-20
+  w-3 w-4 w-5 w-8 w-10 w-12 w-20 w-full min-w-0 shrink-0
+  max-w-md max-w-xl max-w-2xl max-w-3xl max-w-4xl max-w-5xl max-w-6xl max-w-7xl
+
+  px-2 px-3 px-4 px-5 px-6 py-0.5 py-1 py-2 py-2.5 py-3 py-4 py-10 py-12 py-16 py-20
+  p-1.5 p-2 p-3 p-4 p-5 p-6 p-8 p-12
+  pl-3 pr-1 pt-4 pb-3 mt-0.5 mt-1 mt-2 mt-3 mt-4 mt-6
+  mb-1 mb-2 mb-3 mb-4 mb-5 mb-6 mb-8 mb-10
+  ml-1 ml-2 ml-6 mr-1 mx-auto
+  sm:px-6 lg:px-8
+
+  text-xs text-sm text-lg text-2xl text-3xl text-4xl
+  font-medium font-semibold font-bold uppercase text-center text-left
+  truncate line-clamp-2
+
+  text-white text-gray-400 text-gray-500 text-gray-600 text-gray-700 text-gray-800 text-gray-900
+  text-red-400 text-red-500 text-red-700 text-green-600 text-green-700 text-blue-600 text-amber-700
+
+  bg-white bg-gray-50 bg-gray-100 bg-red-50 bg-amber-50 bg-green-50 bg-teal-50
+
+  border border-2 border-b border-t border-dashed border-l-2 border-b-2
+  border-gray-100 border-gray-200 border-gray-300 border-red-100 border-amber-200 border-teal-200
+
+  rounded rounded-lg rounded-xl rounded-2xl rounded-full overflow-hidden
+
+  shadow-sm shadow-md shadow-xl
+
+  transition hover:shadow-md hover:opacity-90 hover:underline hover:bg-gray-50 hover:bg-gray-100
+  hover:bg-red-50 hover:text-gray-700 hover:text-gray-900 hover:text-red-600
+  hover:-translate-y-0.5 group group-hover:text-gray-900
+
+  opacity-30 opacity-90 disabled:opacity-50
+
+  absolute relative top-2 right-2
+  divide-y divide-gray-100
+
+  accent-teal-600 resize-none cursor-pointer
+  focus:outline-none focus:ring-2 focus:border-transparent
+  antialiased
+");
+
+:root {
+  --smi-teal: #2a9d8f;
+  --smi-orange: #e07b39;
+  --smi-dark: #264653;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --color-smi-teal: var(--smi-teal);
+  --color-smi-orange: var(--smi-orange);
+  --color-smi-dark: var(--smi-dark);
+}
+
+body {
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--smi-teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--smi-teal);
+}
+
+.signature-canvas {
+  cursor: crosshair;
+  background: white;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  touch-action: none;
+}

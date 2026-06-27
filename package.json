@@ -1,0 +1,10 @@
+{
+  "name": "seminaire-root",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run start:dev --workspace=backend",
+    "install:all": "npm install --workspace=frontend && npm install --workspace=backend"
+  }
+}
