@@ -1,6 +1,6 @@
 [build]
 builder = "nixpacks"
-buildCommand = "npm install --include=dev && npx prisma generate && npm run build"
+buildCommand = "NODE_ENV=development npm install && npx prisma generate && npm run build"
 
 [deploy]
 startCommand = "npx prisma migrate deploy && node dist/src/main"
